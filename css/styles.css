@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 @font-face {
     font-family: 'proxima';
     src: url('../fonts/proxima_nova_regular.woff2') format('woff2'),
@@ -32,6 +34,7 @@ body{
 	padding: 200px 130px 130px 130px;
 	font-size: 2.7rem;
 	line-height: 1.4;
+	box-shadow: 0 0 50px 10px rgba(0, 0, 0, .3)
 }
 .author {
 	text-transform: uppercase;
@@ -53,4 +56,69 @@ body{
 	font-size: 3rem;
 	color: #8f8f8f;
 	font-style: italic;
+}
+.tools {
+	width: 75%;
+	position: absolute;
+	right: 0;
+	top: 45px;
+}
+.area {
+	background-color: #181818;
+	padding: 20px 0 45px 50px;
+	box-shadow: 0 0 50px 10px rgba(0, 0, 0, .2)
+}
+.area label {
+	text-transform: uppercase;
+	font-family: 'proxima';
+	font-size: 1.5rem;
+	color: #767676;
+	letter-spacing: 2px;
+}
+.area input[type="text"] {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-size: 4.8rem;
+	line-height: 1;
+	font-family: 'Playfair Display', serif;
+	border-bottom: 1px solid rgba(255,255,255, .3);
+	display: block;
+	width: 100%;
+	padding: 0 15px 25px 0;
+	transition: all .4s ease-in-out;
+}
+.area input[type="text"]:focus {
+	outline: 0;
+	border-bottom-color: #f1b82b;
+}
+.toolbar {
+	background-color: #f1b82b;	
+	margin-left: 50px;
+	box-shadow: 0 0 50px 10px rgba(0, 0, 0, .2)
+}
+.toolbar ul {
+	margin: 0;
+	padding: 20px 40px 20px 40px;
+}
+.toolbar ul li {
+	display: inline-block;
+}
+.toolbar ul li a {
+	color: #fff;
+	padding: 0 3px;
+	text-decoration: none;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	/* border: 1px solid red; */
+	font-size: 2rem;
+}
+.toolbar ul li a:hover {
+	/* background-color: #fff; */
+	text-shadow: 0 0 5px #fff;
+	transform: scale(1.2);
+	transition: all .4s ease-in-out;
 }
